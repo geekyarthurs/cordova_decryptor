@@ -32,9 +32,6 @@ class AESCipher:
         return unpad(cipher.decrypt(enc))
 
 
-if not len(sys.argv) == 3:
-    print "Usage: python decrypt-cordova.py" "secret_key" "iv_value" 
-    sys.exit(1)
 arr = os.listdir("./")
 
 arr = [a for a in arr if ((".html" in a) or (".js") in a or (".css") in a)]
